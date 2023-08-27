@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PokemonCards';
-  nombre = 'Pokedex';
+  nombre = 'Vankov';
   subtitle = 'Hazte con todos!';
+
+  //Esta funcion se ejecuta cuando en el hijo (SaludoComponent) se pulsa un boton
+  recibirMensajeDeHijo(evento: string) {
+    alert(evento);
+  }
 }
